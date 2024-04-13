@@ -1,14 +1,14 @@
-### Veja o projeto: 
-https://mauesck.github.io/mauesck-portfolio/index.html
-
-#
-
 ### Instruções
 
-Abra o arquivo index.html
+Instale as dependências: npm install express ejs mysql body-parser moment
+Veja /sql/dbprojetoA.sql: Abra no Worbench e crie o banco de dados
+Clique com o direito em app.js e abra no terminal integrado
+Execute node app.js
 
 #
 
-### Tecnologia
+### Sobre
 
-Utilizado Html, Css, JavaScript e Bootstrap
+Este é um simples projeto que me ajudou atender como trabalhar o CRUD com formúlarios e a arquitetura MVC junto a um database utilizando Node.js.
+Grato pelo aprendizado 🙏.
+
