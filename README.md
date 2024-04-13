@@ -1,9 +1,9 @@
 ### Instruções
 
-Instale as dependências: npm install express ejs mysql body-parser moment
-Veja /sql/dbprojetoA.sql: Abra no Worbench e crie o banco de dados
-Clique com o direito em app.js e abra no terminal integrado
-Execute node app.js
+* Instale as dependências: npm install express ejs mysql body-parser moment
+* Veja /sql/dbprojetoA.sql: Abra no Worbench e crie o banco de dados
+* Clique com o direito em app.js e abra no terminal integrado
+* Execute node app.js
 
 #
 
