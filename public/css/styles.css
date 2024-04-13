@@ -1,0 +1,93 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+#section-nova-tarefa {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+#form-nova-tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-right: 5px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+p,
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover,
+i:hover {
+    opacity: 0.8;
+}
+
+#section-lista-tarefa {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#div-lista-tarefas {
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+}
+
+.input-edicao {
+    display: none;
+}
+
+.fa-circle-xmark, .fa-floppy-disk {
+    display: none;
+}
+
+.tarefa-hoje {
+    color: red; /* Por exemplo, altere para a cor desejada */
+    font-weight: bold; /* Adicione qualquer outra formatação desejada */
+}

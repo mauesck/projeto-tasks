@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <script src="https://kit.fontawesome.com/7b39b2c712.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section id="section-nova-tarefa">
+        <p>Nova Tarefa</p>
+        <form id="form-nova-tarefa" action="/task/create" method="POST">
+            <input type="text" name="description" placeholder="Descrição da Tarefa" required>
+            <input type="datetime-local" name="data" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <section id="section-lista-tarefa">
+        <h1>Lista de Tarefas</h1>
+
+        <% tasks.forEach(task=> { %>
+            <div id="div-lista-tarefas" class="<%= task.ehParaHoje ? 'tarefa-hoje' : '' %>">
+                <p id="id_<%= task.id %>">
+                    <%= task.id %>
+                </p>
+                <p id="description_<%= task.id %>">
+                    <%= task.description %>
+                </p>
+                <p id="data_<%= task.id %>">
+                    <%= task.data %>
+                </p>
+
+                <tr id="editRow_<%= task.id %>" style="display: none;">
+                    <td><input class="input-edicao" type="text" id="editDescription_<%= task.id %>"
+                            placeholder="Editar tarefa..."></td>
+                    <td><input class="input-edicao" type="datetime-local" id="editData_<%= task.id %>"
+                            value="<%= task.data %>"></td>
+                    <td></td>
+                </tr>
+
+                <i class="fa-regular fa-pen-to-square" id="iconEdit_<%= task.id %>"
+                    onclick="editTask('<%= task.id %>')"></i>
+                <i class="fa-regular fa-circle-xmark" id="iconCancel_<%= task.id %>"
+                    onclick="cancelEditTask('<%= task.id %>')"></i>
+                <i class="fa-regular fa-floppy-disk" id="iconSave_<%= task.id %>"
+                    onclick="updateTask('<%= task.id %>')"></i>
+                <i class="fa-regular fa-trash-can" onclick="deleteTask('<%= task.id %>')"></i>
+            </div>
+            <% }); %>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
