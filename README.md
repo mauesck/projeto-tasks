@@ -9,6 +9,6 @@
 
 ### Sobre
 
-Este é um simples projeto que me ajudou atender como trabalhar o CRUD com formúlarios e a arquitetura MVC junto a um database utilizando Node.js.
+Este é um projeto que me ajudou atender como trabalhar o CRUD com formulários e a arquitetura MVC junto a um database utilizando Node.js.
 Grato pelo aprendizado 🙏.
 
